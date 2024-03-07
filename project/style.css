@@ -6,21 +6,21 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(./assets/bg-mobile.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.1);
-    --surface-color-hover: rgba(255, 255, 255, 0.02);
-    --highlight-color: rgba(255, 255, 255, 0.2);
+    --bg-url: url(./assets/bg-dark-mobile.png);
+    --stroke-color: rgba(40, 59, 94, 0.597);
+    --surface-color: rgba(70, 75, 77, 0.285);
+    --surface-color-hover: rgba(76, 138, 164, 0.306);
+    --highlight-color: rgba(76, 138, 164, 0.306);
     --switch-bg-url: url(./assets/moon-stars.svg)
 }
 
 .light {
     --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(0, 0, 0, 0.1);
+    --bg-url: url(./assets/bg-light-mobile.png);
+    --stroke-color: rgba(13, 71, 92, 0.401);
+    --surface-color: rgba(159, 83, 13, 0.126);
+    --surface-color-hover: rgba(60, 44, 15, 0.161);
+    --highlight-color: rgba(60, 44, 15, 0.161);
     --switch-bg-url: url(./assets/sun.svg)
 }
 
@@ -102,12 +102,18 @@ body * {
     height: 24px;
     background: var(--surface-color);
     border: var(--stroke-color);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     --webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 
 }
 
+p {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
 
 /*  links */
 ul{
@@ -115,7 +121,7 @@ ul{
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 
     padding: 24px 0;
 }
@@ -128,14 +134,14 @@ ul li a{
     padding: 16px 24px;
 
     background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
+    border: 2px solid var(--stroke-color);
     border-radius: 8px;
     
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 
     transition: background 0.2s;
 }
@@ -151,7 +157,7 @@ ul li a:hover {
 
     padding: 24px 0;
 
-    font-size: 24px;
+    font-size: 30px;
 
 }
 
@@ -177,11 +183,11 @@ footer {
 /* media quueries */
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(./assets/bg-desktop.jpg)
+        --bg-url: url(./assets/bg-dark.jpeg)
     } 
 
     .light {
-        --bg-url: url(./assets/bg-desktop-light.jpg)
+        --bg-url: url(./assets/bg-light.jpeg)
     }
 }
 
